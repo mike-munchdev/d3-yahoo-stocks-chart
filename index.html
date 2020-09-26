@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D3 - Yahoo - Stock Chart</title>
+    <style type="text/css">
+      /* 13. Basic Styling with CSS */
+
+      /* Style the lines by removing the fill and applying a stroke */
+      .line {
+        fill: none;
+        stroke: #ffab00;
+        stroke-width: 3;
+      }
+
+      .overlay {
+        fill: none;
+        pointer-events: all;
+      }
+
+      /* Style the dots by assigning a fill and stroke */
+      .dot {
+        fill: #ffab00;
+        stroke: #fff;
+      }
+
+      .focus circle {
+        fill: none;
+        stroke: steelblue;
+      }
+    </style>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="https://unpkg.com/d3fc"></script> -->
+    <script src="//cdn.rawgit.com/dcodeIO/protobuf.js/6.8.8/dist/protobuf.min.js"></script>
+    <script src="./__finStreamer-proto.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+  </head>
+  <body>
+    <div id="chart"></div>
+
+    <!-- <script src="live-main.js"></script> -->
+    <script src="real-time.js"></script>
+  </body>
+</html>
